@@ -1,5 +1,6 @@
-# Github's C.gitignore.
+# ============== C Gitignore ==============
 
+# Github's C.gitignore.
 # Prerequisites
 *.d
 
@@ -53,6 +54,7 @@ Mkfile.old
 dkms.conf
 
 
+# ============== Keil ==============
 # Keil.gitignore from https://github.com/mrshrdlu/gitignore-keil.
 # Taken mostly from http://www.keil.com/support/man/docs/uv4/uv4_b_filetypes.htm
 
@@ -135,6 +137,7 @@ examples/*/Keil/*.scvd
 # Output from the build folder.
 build/*
 
+# ============== CCS ==============
 # CCS files.
 Debug/
 Release/
@@ -146,5 +149,58 @@ RemoteSystemsTempFiles/
 .launches/
 /.metadata/
 
+# ============== Microsoft Office ==============
 # API autogen documentation.
 resources/Documentation
+
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
+# ============== KiCad ==============
+# Yoinked from https://github.com/github/gitignore/blob/main/KiCad.gitignore
+# For PCBs designed using KiCad: https://www.kicad.org/
+# Format documentation: https://kicad.org/help/file-formats/
+
+# Temporary files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-backups
+*.kicad_prl
+*.sch-bak
+*~
+_autosave-*
+*.tmp
+*-save.pro
+*-save.kicad_pcb
+fp-info-cache
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*.dsn
+*.ses
+
+# Exported BOM files
+*.xml
+*.csv
